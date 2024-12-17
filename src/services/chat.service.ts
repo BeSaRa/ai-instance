@@ -1,11 +1,12 @@
 import { inject, Injectable, signal } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { UrlService } from '@/services/url.service'
-import { catchError, map, Observable } from 'rxjs'
+import { catchError, distinctUntilChanged, map, Observable, tap } from 'rxjs'
 import { Message } from '@/models/message'
 import { AppStore } from '@/stores/app.store'
 import { ChatMessageResultContract } from '@/contracts/chat-message-result-contract'
 import { formatString, formatText } from '@/utils/utils'
+import { FormControl } from '@angular/forms'
 
 @Injectable({
   providedIn: 'root',
@@ -44,5 +45,16 @@ export class ChatService {
           return res
         })
       )
+  }
+  botNameCtrl = new FormControl('website', { nonNullable: true })
+
+  onBotNameChange() {
+    return this.botNameCtrl.valueChanges.pipe(
+      distinctUntilChanged(),
+      tap(() => {
+        this.conversationId.set('')
+        this.messages.set([])
+      })
+    )
   }
 }
