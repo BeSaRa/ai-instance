@@ -14,7 +14,7 @@ export class AiSearchService {
   private readonly urlService = inject(UrlService)
 
   search(searchQuery: SearchQueryContract): Observable<PaginationResultContract<SearchResultContract>> {
-    const url = `${this.urlService.URLS.AI_SEARCH}/website`
+    const url = `${this.urlService.URLS.AI_SEARCH}/legal`
     return this.http.post<PaginationResultContract<SearchResultContract>>(url, searchQuery)
   }
 }
