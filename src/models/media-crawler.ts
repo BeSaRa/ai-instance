@@ -19,7 +19,7 @@ class CrawlerSettings {
     this.selectors = []
     this.mediaCrawling = mediaCrawling
     this.topics = []
-    this.containerName = 'rera-storage'
+    this.containerName = 'rera'
   }
 }
 
