@@ -1,7 +1,7 @@
 {
   "ENVIRONMENTS_URLS": {
     "DEV": "https://mm-api-demo.azurewebsites.net/api",
-    "AQARAT_STG": "http://fna-mm-swd-cbai-01.azurewebsites.net",
+    "AQARAT_STG": "http://fna-mm-swd-cbai-01.azurewebsites.net/api",
     "AZURE": "https://rera-api.azurewebsites.net/api",
     "RERA": "https://rera-api-1.azurewebsites.net/api",
     "MM": "https://mm-api-demo.azurewebsites.net/api"
