@@ -30,7 +30,7 @@
 
     @if (hasSize()) {
       <video #idleVideo [ngClass]="{ 'h-full': hasSize(), 'w-full': !hasSize() }" [hidden]="store.isStreamStarted()">
-        <source src="assets/videos/idle-full.webm" type="video/webm" />
+        <source src="assets/videos/idle-full-mm.webm" type="video/webm" />
       </video>
     }
   </div>
