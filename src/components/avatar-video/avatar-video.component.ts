@@ -164,7 +164,7 @@ export class AvatarVideoComponent extends OnDestroyMixin(class {}) implements On
 
   private playIdle(): void {
     if (this.idleVideo() && this.idleVideo()?.nativeElement) {
-      this.idleVideo()!.nativeElement.src = 'assets/videos/idle-full.webm'
+      this.idleVideo()!.nativeElement.src = 'assets/videos/idle-full-mm.webm'
       this.idleVideo()!.nativeElement.muted = true
       this.idleVideo()!.nativeElement.loop = true
       this.idleVideo()!.nativeElement.play().then()
