@@ -4,9 +4,9 @@
     "AQARAT_STG": "http://fna-mm-swd-cbai-01.azurewebsites.net/api",
     "AZURE": "https://rera-api.azurewebsites.net/api",
     "RERA": "https://rera-api-1.azurewebsites.net/api",
-    "MM_DEV": "fna-mm-swd-cbai-01.azurewebsites.net/api",
-    "MM_STG": "fna-mm-sws-cbai-01.azurewebsites.net/api",
-    "MM_PROD": "fna-mm-swp-cbai-01.azurewebsites.net/api"
+    "MM_DEV": "https://fna-mm-swd-cbai-01.azurewebsites.net/api",
+    "MM_STG": "https://fna-mm-sws-cbai-01.azurewebsites.net/api",
+    "MM_PROD": "https://fna-mm-swp-cbai-01.azurewebsites.net/api"
   },
   "API_VERSION": "v1",
   "BASE_ENVIRONMENT": "MM_STG",
